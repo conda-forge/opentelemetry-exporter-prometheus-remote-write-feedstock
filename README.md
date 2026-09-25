@@ -40,31 +40,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `opentelemetry-exporter-prometheus-remote-write` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install opentelemetry-exporter-prometheus-remote-write
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install opentelemetry-exporter-prometheus-remote-write
 ```
 
-It is possible to list all of the versions of `opentelemetry-exporter-prometheus-remote-write` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add opentelemetry-exporter-prometheus-remote-write
+# for installing globally
+pixi global install opentelemetry-exporter-prometheus-remote-write
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `opentelemetry-exporter-prometheus-remote-write` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search opentelemetry-exporter-prometheus-remote-write --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search opentelemetry-exporter-prometheus-remote-write --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search opentelemetry-exporter-prometheus-remote-write --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -76,6 +118,8 @@ mamba repoquery whoneeds opentelemetry-exporter-prometheus-remote-write --channe
 # List dependencies of `opentelemetry-exporter-prometheus-remote-write`:
 mamba repoquery depends opentelemetry-exporter-prometheus-remote-write --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
